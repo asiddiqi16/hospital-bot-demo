@@ -1,0 +1,24 @@
+[project]
+name = "hospital-bot-demo"
+version = "0.1.0"
+description = "A hospital bot demo using Langchain"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "asyncio",
+    "fastapi",
+    "langchain",
+    "langchain-neo4j",
+    "langchain[google-genai]",
+    "langchainhub",
+    "openai",
+    "neo4j",
+    "numpy",
+    "google-genai",
+    "opentelemetry-api",
+    "pydantic",
+    "uvicorn"
+]
+
+[project.optional-dependencies]
+dev = ["black", "flake8"]
